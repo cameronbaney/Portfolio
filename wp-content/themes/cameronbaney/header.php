@@ -39,6 +39,7 @@
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 <link href="<?php bloginfo('template_url'); ?>/style.css" rel="stylesheet">
 <link rel="icon" href="/favicon.png">
+<meta property="og:image" content="http://cameronbaney.com/wp-content/uploads/2009/10/new-logo.gif">
 <?php wp_head(); ?>
 </head>
 
