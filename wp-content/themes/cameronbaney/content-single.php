@@ -10,5 +10,6 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
+		<h2>Comments</h2>
 		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'cameronbaney' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
