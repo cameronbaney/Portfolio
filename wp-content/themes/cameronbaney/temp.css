@@ -387,10 +387,17 @@ ul.page-numbers {
     padding-top: 0
   }
 .meta {
+  color: #666;
   font-size:.9em;
   font-style: italic;
   margin-bottom: 15px
 }
+.meta i {
+  margin-right: 5px
+}
+  .meta .icon-tags {
+    margin-left: 15px
+  }
 .entry-content .demo-nav {
   list-style: none;
   margin: 0 0 20px
