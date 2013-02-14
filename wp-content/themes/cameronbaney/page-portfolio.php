@@ -26,6 +26,14 @@ get_header(); ?>
 					<div class="desc">
 						<h2><?php the_title(); ?></h2>
 						<p><?php the_field('description'); ?></p>
+						<?php if(get_field('type_of_site')){
+							$responsive = get_field('type_of_site'); ?>
+						<ul class="responsive cf">
+							<?php foreach($responsive as $type){
+								echo '<li><i class="icon-' . $type . '"></i></li>';
+							}
+						} ?>
+						</ul>
 						<span href="<?php the_field('link'); ?>" class="btn">Visit Site</span>
 					</div>
 				</a>

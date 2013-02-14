@@ -16,13 +16,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'cameronb_redesignportfolio');
+define('DB_NAME', 'portfolio');
 
 /** MySQL database username */
-define('DB_USER', 'cameronb_new');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'mapmaker4283');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
