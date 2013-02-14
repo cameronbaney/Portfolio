@@ -926,6 +926,10 @@ x.2 - TABLET
     height: auto;
     width:100%;
   }
+  code[class*="language-"],
+  pre[class*="language-"] {
+    word-wrap: break-word;
+  }
 }
 /*--------------------------------------------------------------
 x.3 - WIDE DESKTOP
