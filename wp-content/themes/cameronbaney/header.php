@@ -10,8 +10,8 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
-<meta name="viewport" content="width=device-width" />
+<meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta name="viewport" content="width=device-width">
 <title><?php
 	/*
 	 * Print the <title> tag based on what is being viewed.
@@ -33,12 +33,12 @@
 		echo ' | ' . sprintf( __( 'Page %s', 'cameronbaney' ), max( $paged, $page ) );
 
 	?></title>
-<link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <script type="text/javascript" src="//use.typekit.net/els2dzt.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 <link href="<?php bloginfo('template_url'); ?>/temp.css" rel="stylesheet">
-
+<link rel="icon" href="/favicon.png">
 <?php wp_head(); ?>
 </head>
 
