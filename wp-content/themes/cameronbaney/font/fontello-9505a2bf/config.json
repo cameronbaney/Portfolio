@@ -1,0 +1,53 @@
+{
+  "name": "icons",
+  "glyphs": [
+    {
+      "uid": "d090355c31f497b61d676416c1fd39fb",
+      "orig_css": "twitter",
+      "orig_code": 62217,
+      "css": "twitter",
+      "code": 62217,
+      "src": "entypo"
+    },
+    {
+      "uid": "47bd87a650e95b97f947d275ed968efe",
+      "orig_css": "facebook-squared",
+      "orig_code": 62222,
+      "css": "facebook-squared",
+      "code": 62222,
+      "src": "entypo"
+    },
+    {
+      "uid": "d94334f23acba022bfd68e49d76b31bb",
+      "orig_css": "github",
+      "orig_code": 62208,
+      "css": "github",
+      "code": 62208,
+      "src": "entypo"
+    },
+    {
+      "uid": "ae49d5a5d0c2f7253f375bde5f0da2d2",
+      "orig_css": "lastfm",
+      "orig_code": 62241,
+      "css": "lastfm",
+      "code": 62241,
+      "src": "entypo"
+    },
+    {
+      "uid": "7132e1233bc16cd1b6efe7e29d3613a5",
+      "orig_css": "linkedin",
+      "orig_code": 62232,
+      "css": "linkedin",
+      "code": 62232,
+      "src": "entypo"
+    },
+    {
+      "uid": "c9829449672245d22b3d43d7d1a7cc90",
+      "orig_css": "grooveshark",
+      "orig_code": 56,
+      "css": "grooveshark",
+      "code": 56,
+      "src": "zocial"
+    }
+  ]
+}
