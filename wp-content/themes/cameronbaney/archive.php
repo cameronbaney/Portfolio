@@ -10,13 +10,14 @@
 
 get_header(); ?>
 
-		<section id="primary" class="content-area">
-			<div id="content" class="site-content" role="main">
+		<div class="container">
 
 			<?php if ( have_posts() ) : ?>
 
-				<header class="page-header">
-					<h1 class="page-title">
+
+			<div class="row">
+				<div class="span12">
+					<h1>Blog
 						<?php
 							if ( is_category() ) {
 								printf( __( 'Category Archives: %s', 'cameronbaney' ), '<span>' . single_cat_title( '', false ) . '</span>' );
@@ -51,6 +52,9 @@ get_header(); ?>
 							}
 						?>
 					</h1>
+				</div>
+			</div>
+			<div class="row">
 					<?php
 						if ( is_category() ) {
 							// show an optional category description
@@ -67,22 +71,14 @@ get_header(); ?>
 					?>
 				</header><!-- .page-header -->
 
-				<?php cameronbaney_content_nav( 'nav-above' ); ?>
-
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<?php
-						/* Include the Post-Format-specific template for the content.
-						 * If you want to overload this in a child theme then include a file
-						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						 */
 						get_template_part( 'content', get_post_format() );
 					?>
 
 				<?php endwhile; ?>
-
-				<?php cameronbaney_content_nav( 'nav-below' ); ?>
 
 			<?php else : ?>
 
@@ -90,8 +86,25 @@ get_header(); ?>
 
 			<?php endif; ?>
 
-			</div><!-- #content .site-content -->
-		</section><!-- #primary .content-area -->
+			</div>
+			<div class="row">
+				<div class="span8 offset4">
+					<?php
+					global $wp_query;
 
-<?php get_sidebar(); ?>
+					$big = 999999999; // need an unlikely integer
+
+					echo paginate_links( array(
+						'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+						'format' => '?paged=%#%',
+						'type' => 'list',
+						'current' => max( 1, get_query_var('paged') ),
+						'total' => $wp_query->max_num_pages,
+						'prev_text' => __('Previous'),
+						'next_text' => __('Next'),
+					) );
+					?>
+				</div>
+			</div>
+		</div>
 <?php get_footer(); ?>

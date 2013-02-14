@@ -37,7 +37,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <script type="text/javascript" src="//use.typekit.net/els2dzt.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-<link href="<?php bloginfo('template_url'); ?>/temp.css" rel="stylesheet">
+<link href="<?php bloginfo('template_url'); ?>/style.css" rel="stylesheet">
 <link rel="icon" href="/favicon.png">
 <?php wp_head(); ?>
 </head>
