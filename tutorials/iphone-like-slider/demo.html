@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cameron Baney Design Blog - iPhone Like Content Slider</title>
+<link rel="stylesheet" href="css/cbdb-iphone-slider.css" />
+<link rel="stylesheet" href="css/demo.css" />
+</head>
+<body>
+<div id="demo">
+    <h1 id="logo"><a href="http://blog.cameronbaney.com">Cameron Baney Design Blog</a></h1>
+    <h1>iPhone-like Sliding Content</h1>
+    <div id="loopedSlider">
+        <a href="#" class="previous">previous</a>
+        <div class="container">
+            <div class="slides">
+                    <div><img src="img/piece-1.jpg" alt="" /></div>
+                    <div><img src="img/piece-2.jpg" alt="" /></div>
+                    <div><img src="img/piece-3.jpg" alt="" /></div>
+                    <div><img src="img/piece-4.jpg" alt="" /></div>
+            </div><!-- end .slides -->
+        </div><!-- end .container -->
+        <a href="#" class="next">next</a>
+    </div><!-- end #loopedSlider -->
+<br clear="all" />
+<div class="tut-btns">
+    <span class="tutbtn r"><a class="tutsource" href="http://blog.cameronbaney.com/tutorials/iphone-like-slider/iphone-like-slider.zip">Download Source</a></span>
+    <span class="tutbtn"><a class="tutdemo" href="http://blog.cameronbaney.com/tutorials/create-a-slick-content-slider-using/">View Original Article</a></span>
+</div>
+</div><!-- end #demo -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/loopedslider.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+        $(function(){
+                $('#loopedSlider').loopedSlider({
+					addPagination: true	
+				});
+        });
+</script>
+</body>
+</html>
